@@ -5,7 +5,7 @@ let fixedPlaylist = [];
 
 for(let i = 0; i < Object.keys(playlist.id).length ; i++) {
     let ob = {};
-    for(let j = 0; j < Object.keys(playlistKeys).length ; j++) {
+    for(let j = 0; j < playlistKeys.length ; j++) {
         ob[playlistKeys[j]] = playlist[playlistKeys[j]][i];
     }
     fixedPlaylist.push(ob);
